@@ -425,6 +425,103 @@ body {
       height:230px;
     }
 
+    .bg-img4{
+      background-image: url('/image/imgi_66_inner_blog_thumb02.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: auto;
+      width: auto;
+    }
+
+/* Card design */
+.contact-card {
+    background: #fff;
+    padding: 40px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    transform: translateY(0);
+}
+
+/* Hover animation */
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* Rounded icon background */
+.icon-circle {
+    width: 110px;
+    height: 110px;
+    background: #e9f8ef;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    transition: 0.3s ease;
+}
+
+/* Hover rotate effect */
+.contact-card:hover .icon-circle {
+    transform: rotate(10deg) scale(1.05);
+}
+
+/* Title */
+.contact-title {
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+/* Text */
+.contact-text {
+    color: #666;
+}
+
+/* Fade-in animation */
+.fade-card {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.fade-card:nth-child(1) { animation-delay: 0.2s; }
+.fade-card:nth-child(2) { animation-delay: 0.4s; }
+.fade-card:nth-child(3) { animation-delay: 0.6s; }
+
+input:hover, select:hover, textarea:hover {
+    transform: translateY(-3px);
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+
+@keyframes fadeIn {
+    from { opacity:0; }
+    to { opacity:1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity:0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
