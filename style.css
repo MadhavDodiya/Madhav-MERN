@@ -349,7 +349,7 @@ body {
 }
 
 /* testnomal-slidebar */
-    /* html,
+/* html,
     body {
       position: relative;
       height: 100%;
@@ -364,160 +364,242 @@ body {
       padding: 0;
     } */
 
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background-image: url('/image/testimonial_bg.jpg');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-    }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-image: url('/image/testimonial_bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-    .instagram{
-      background: #00800081;
-      transition: 0.5s;
-      display: none;
-    }
+.instagram {
+  background: #00800081;
+  transition: 0.5s;
+  display: none;
+}
 
-    .gym-img1{
-      background-image: url('/image/imgi_44_instagram_post02_a85b661a-67ea-4a36-ad29-c9e84ee797ae.jpg');object-fit:cover;
-      width:100%; 
-      height:230px;
-    }
+.gym-img1 {
+  background-image: url('/image/imgi_44_instagram_post02_a85b661a-67ea-4a36-ad29-c9e84ee797ae.jpg');
+  object-fit: cover;
+  width: 100%;
+  height: 230px;
+}
 
-    .gym-img2{
-      background-image: url('/image/imgi_45_instagram_post03_8902567f-4641-4a0d-8a5d-d9ab44870ead.jpg');object-fit:cover;
-      width:100%; 
-      height:230px;
-    }
+.gym-img2 {
+  background-image: url('/image/imgi_45_instagram_post03_8902567f-4641-4a0d-8a5d-d9ab44870ead.jpg');
+  object-fit: cover;
+  width: 100%;
+  height: 230px;
+}
 
-    .gym-img3{
-      background-image: url('/image/imgi_46_instagram_post04_f36edf63-f2ee-407c-ad8f-24edd6fcf69d.jpg');object-fit:cover;
-      width:100%; 
-      height:230px;
-    }
+.gym-img3 {
+  background-image: url('/image/imgi_46_instagram_post04_f36edf63-f2ee-407c-ad8f-24edd6fcf69d.jpg');
+  object-fit: cover;
+  width: 100%;
+  height: 230px;
+}
 
-    .gym-img4{
-      background-image: url('/image/imgi_47_instagram_post05_076fdf6c-6ffe-45f7-8388-6900702b3b4b.jpg');object-fit:cover;
-      width:100%; 
-      height:230px;
-    }
+.gym-img4 {
+  background-image: url('/image/imgi_47_instagram_post05_076fdf6c-6ffe-45f7-8388-6900702b3b4b.jpg');
+  object-fit: cover;
+  width: 100%;
+  height: 230px;
+}
 
-    .gym-img5{
-      background-image: url('/image/imgi_48_instagram_post06_ec34de05-56ce-4943-96eb-fdbc6f239030.jpg');object-fit:cover;
-      width:100%; 
-      height:230px;
-    }
+.gym-img5 {
+  background-image: url('/image/imgi_48_instagram_post06_ec34de05-56ce-4943-96eb-fdbc6f239030.jpg');
+  object-fit: cover;
+  width: 100%;
+  height: 230px;
+}
 
-    .bg-img4{
-      background-image: url('/image/imgi_66_inner_blog_thumb02.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: auto;
-      width: auto;
-    }
+.bg-img4 {
+  background-image: url('/image/imgi_66_inner_blog_thumb02.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: auto;
+}
 
 /* Card design */
 .contact-card {
-    background: #fff;
-    padding: 40px 25px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
-    transform: translateY(0);
+  background: #fff;
+  padding: 40px 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  transform: translateY(0);
 }
 
 /* Hover animation */
 .contact-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 /* Rounded icon background */
 .icon-circle {
-    width: 110px;
-    height: 110px;
-    background: #e9f8ef;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px auto;
-    transition: 0.3s ease;
+  width: 110px;
+  height: 110px;
+  background: #e9f8ef;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+  transition: 0.3s ease;
 }
 
 /* Hover rotate effect */
 .contact-card:hover .icon-circle {
-    transform: rotate(10deg) scale(1.05);
+  transform: rotate(10deg) scale(1.05);
 }
 
 /* Title */
 .contact-title {
-    font-weight: 700;
-    margin-bottom: 12px;
-    font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-size: 20px;
 }
 
 /* Text */
 .contact-text {
-    color: #666;
+  color: #666;
 }
 
 /* Fade-in animation */
 .fade-card {
-    opacity: 0;
-    transform: translateY(40px);
-    animation: fadeUp 0.8s ease forwards;
+  opacity: 0;
+  /* transform: translateY(40px); */
+  animation: fadeUp 0.8s ease forwards;
 }
 
-.fade-card:nth-child(1) { animation-delay: 0.2s; }
-.fade-card:nth-child(2) { animation-delay: 0.4s; }
-.fade-card:nth-child(3) { animation-delay: 0.6s; }
+.fade-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.fade-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.fade-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
 
 input:hover, select:hover, textarea:hover {
-    transform: translateY(-3px);
-    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu {
+  width: 150px;
+  border-radius: 0;
+  padding: 18px 0;
+  margin-top: 25px;
+  border: none;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item {
+  padding: 10px 25px;
+  font-size: 15px;
+}
+
+.dropdown-item:hover {
+  background: #f5f5f5;
+}
+
+.navbar .dropdown-toggle::after {
+    display: none !important;
+}
+
+.login-card {
+      max-width: 450px;
+      margin: 70px auto;
+      padding: 40px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    }
+    .login-title {
+      font-weight: 700;
+      font-size: 32px;
+    }
+    .login-subtext {
+      color: #777;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+    .form-control {
+      height: 50px;
+      border-radius: 8px;
+    }
+    .btn-login {
+      background: #059142;
+      border: none;
+      height: 50px;
+      font-size: 18px;
+      border-radius: 30px;
+      color: #fff;
+      font-weight: 600;
+    }
+    .btn-login:hover {
+      background: #047c38;
+    }
+
+/* Hover open on desktop */
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
 }
 
 @keyframes fadeIn {
-    from { opacity:0; }
-    to { opacity:1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity:0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity:1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
 @keyframes fadeUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
