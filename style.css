@@ -691,7 +691,6 @@ input:hover, select:hover, textarea:hover {
         font-style: italic;
     }
 
-
 /* Hover open on desktop */
 @media (min-width: 992px) {
   .nav-item.dropdown:hover .dropdown-menu {
