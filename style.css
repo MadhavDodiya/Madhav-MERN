@@ -691,6 +691,29 @@ input:hover, select:hover, textarea:hover {
         font-style: italic;
     }
 
+    .main-image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        background: #fff;
+        padding: 20px;
+    }
+    .thumb-img {
+        width: 90px;
+        height: 90px;
+        object-fit: contain;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        background: #fff;
+        padding: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .thumb-img:hover,
+    .thumb-img.active {
+        border-color: #0fb151;
+    }
+
 /* Hover open on desktop */
 @media (min-width: 992px) {
   .nav-item.dropdown:hover .dropdown-menu {

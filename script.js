@@ -61,3 +61,13 @@ var swiper = new Swiper(".mySwiper", {
         let v = parseInt(input.value);
         input.value = v + 1;
     };
+
+    function changeImage(img) {
+    document.getElementById("mainProductImage").src = img.src;
+
+    // remove active class
+    document.querySelectorAll(".thumb-img").forEach(el => el.classList.remove("active"));
+
+    // add to selected image
+    img.classList.add("active");
+}
