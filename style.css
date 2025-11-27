@@ -605,6 +605,92 @@ input:hover, select:hover, textarea:hover {
       background: #047c38;
     }
 
+    .icon-check {
+        color: #059142;
+        font-size: 16px;
+    }
+    .qty-box {
+        width: 120px;
+    }
+    .qty-box button {
+        border: 1px solid #ddd;
+        width: 35px;
+        height: 40px;
+        background: #fff;
+        font-size: 20px;
+    }
+    .qty-box input {
+        width: 45px;
+        border: 1px solid #ddd;
+        text-align: center;
+        height: 40px;
+    }
+    .add-cart-btn {
+        background: #059142;
+        color: #fff;
+        border: none;
+        padding: 10px 25px;
+        font-weight: 600;
+    }
+
+    .product-tabs .nav-link {
+        font-weight: 600;
+        color: #000;
+        border: none;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .product-tabs .nav-link.active {
+        color: #059142;
+    }
+
+    .product-tabs .nav-link.active::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background: #059142;
+        border-radius: 3px;
+    }
+
+    .product-content {
+        margin-top: 25px;
+    }
+
+    .section-title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .info-table {
+        border: 1px solid #ff0000;
+        margin-top: 15px;
+    }
+    .info-table tr td {
+        padding: 14px 15px;
+        border: 1px solid #ff0000;
+    }
+    .info-table tr:last-child td {
+        border-bottom: none;
+    }
+    .info-title {
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .left-text {
+        font-weight: 700;
+        color: #000;
+    }
+    .right-text {
+        color: #444;
+        font-style: italic;
+    }
+
 
 /* Hover open on desktop */
 @media (min-width: 992px) {

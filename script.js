@@ -49,4 +49,15 @@ var swiper = new Swiper(".mySwiper", {
         });
     }
 
-    
+    const minus = document.getElementById("qtyMinus");
+    const plus = document.getElementById("qtyPlus");
+    const input = document.getElementById("qtyInput");
+
+    minus.onclick = () => {
+        let v = parseInt(input.value);
+        if (v > 1) input.value = v - 1;
+    };
+    plus.onclick = () => {
+        let v = parseInt(input.value);
+        input.value = v + 1;
+    };
