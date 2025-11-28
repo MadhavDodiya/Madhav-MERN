@@ -311,6 +311,12 @@ body {
   transition: 0.5s;
 }
 
+.btn6{
+  margin: 0px 0px 0px 50px;
+  /* right: 10px; */
+  float: right;
+}
+
 /* icon-color */
 .clr1 {
   color: #f58634;
@@ -667,12 +673,12 @@ input:hover, select:hover, textarea:hover {
     }
 
     .info-table {
-        border: 1px solid #ff0000;
+        border: 1px solid #000000;
         margin-top: 15px;
     }
     .info-table tr td {
         padding: 14px 15px;
-        border: 1px solid #ff0000;
+        border: 1px solid #000000;
     }
     .info-table tr:last-child td {
         border-bottom: none;
@@ -713,6 +719,40 @@ input:hover, select:hover, textarea:hover {
     .thumb-img.active {
         border-color: #0fb151;
     }
+
+    .product-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+.price-range {
+    width: 100%;
+}
+.sidebar-link {
+    text-decoration:none;
+    color:#000;
+    font-size:14px;
+}
+.sidebar-link:hover { color:#2ecc71; }
+.add-btn{
+    width:45px;height:45px;border-radius:50%;background:#0f9d58;
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-size:20px;cursor:pointer;
+}
+
+/* Cart Button Hover */
+.cart-btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0px 4px 12px rgba(0, 128, 0, 0.4);
+    transition: 0.25s ease-in-out;
+}
+
+/* Buy Now Hover */
+.buy-btn:hover {
+    background:#ffa933;
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 12px rgba(255, 159, 41, 0.4);
+    transition: 0.25s ease-in-out;
+}
 
 /* Hover open on desktop */
 @media (min-width: 992px) {
