@@ -16,58 +16,58 @@ document.querySelectorAll('.circle').forEach(circle => {
 });
 
 var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
-    let btn = document.getElementById("topBtn");
+let btn = document.getElementById("topBtn");
 
-    window.onscroll = function () {
-        if (document.documentElement.scrollTop > 200) {
-            btn.style.display = "block";
-        } else {
-            btn.style.display = "none";
-        }
-    };
+window.onscroll = function () {
+  if (document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
 
-    function topFunction() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    }
+function topFunction() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
 
-    const minus = document.getElementById("qtyMinus");
-    const plus = document.getElementById("qtyPlus");
-    const input = document.getElementById("qtyInput");
+const minus = document.getElementById("qtyMinus");
+const plus = document.getElementById("qtyPlus");
+const input = document.getElementById("qtyInput");
 
-    minus.onclick = () => {
-        let v = parseInt(input.value);
-        if (v > 1) input.value = v - 1;
-    };
-    plus.onclick = () => {
-        let v = parseInt(input.value);
-        input.value = v + 1;
-    };
+minus.onclick = () => {
+  let v = parseInt(input.value);
+  if (v > 1) input.value = v - 1;
+};
+plus.onclick = () => {
+  let v = parseInt(input.value);
+  input.value = v + 1;
+};
 
-    function changeImage(img) {
-    document.getElementById("mainProductImage").src = img.src;
+function changeImage(img) {
+  document.getElementById("mainProductImage").src = img.src;
 
-    // remove active class
-    document.querySelectorAll(".thumb-img").forEach(el => el.classList.remove("active"));
+  // remove active class
+  document.querySelectorAll(".thumb-img").forEach(el => el.classList.remove("active"));
 
-    // add to selected image
-    img.classList.add("active");
+  // add to selected image
+  img.classList.add("active");
 }
