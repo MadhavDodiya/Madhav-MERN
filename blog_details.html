@@ -1,228 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="/image/logo.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- Latest compiled and minified CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Latest compiled JavaScript -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-        <title>Blog Details</title>
-          <style>
-      /* Internal CSS for the Footer */
-      .suxmix-footer {
-          background-color: #000;
-          color: #fff;
-          position: relative;
-          padding-top: 0; /* Adjust padding due to the image banner */
-          overflow: hidden; /* To handle the partial leaf image */
-      }
-  
-      .suxmix-footer-top {
-          display: flex;
-          height: 250px; /* Approximate height of the image banner */
-          overflow: hidden;
-      }
-  
-      .suxmix-footer-top .image-col {
-          flex-grow: 1;
-          background-size: cover;
-          background-position: center;
-          /* Using placeholder background images since the original images aren't provided */
-          /* In a real project, you would use <img> tags or specific background image URLs */
-      }
-  
-      .img-1 { background-image: url(''); }
-      .img-2 { background-image: url(''); }
-      .img-3 { background-image: url(''); }
-      .img-4 { background-image: url(''); }
-      .img-5 { background-image: url(''); }
-  
-      .suxmix-footer-content {
-          padding: 50px 0;
-          position: relative;
-          z-index: 10;
-      }
-  
-      /* Styling for the leaf overlay - uses absolute positioning */
-      .leaf-overlay {
-          position: absolute;
-          width: 150px; /* Adjust size as needed */
-          height: 100%;
-          top: 0;
-          z-index: 5;
-          background-repeat: no-repeat;
-          pointer-events: none; /* Allows clicks to pass through */
-      }
-  
-      /* Text and Link Styles */
-      .footer-logo-text {
-          display: inline-block;
-          margin-bottom: 5px;
-          font-size: 1.25rem;
-          font-weight: 700;
-      }
-  
-      .footer-logo-text small {
-          display: block;
-          font-weight: 400;
-          font-size: 0.75rem;
-          color: #ccc;
-      }
-  
-      .footer-text {
-          font-size: 0.85rem;
-          color: #999;
-          line-height: 1.6;
-      }
-  
-      .footer-title {
-          font-size: 1.1rem;
-          font-weight: 700;
-          margin-bottom: 15px;
-          text-transform: uppercase;
-      }
-  
-      .footer-link-list {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-      }
-  
-      .footer-link-list li {
-          margin-bottom: 8px;
-      }
-  
-      .footer-link-list li a {
-          color: #999;
-          text-decoration: none;
-          font-size: 0.9rem;
-          transition: color 0.3s;
-      }
-  
-      .footer-link-list li a:hover {
-          color: #fff;
-      }
-  
-      /* Social Icons */
-      .social-icons a {
-          color: #fff;
-          font-size: 1rem;
-          width: 30px;
-          height: 30px;
-          line-height: 30px;
-          text-align: center;
-          border: 1px solid #444;
-          border-radius: 50%;
-          display: inline-flex;
-          justify-content: center;
-          align-items: center;
-          margin-right: 10px;
-          transition: background-color 0.3s, border-color 0.3s;
-      }
-  
-      .social-icons a:hover {
-          background-color: #28a745; /* Example hover color */
-          border-color: #28a745;
-      }
-  
-      /* Contact Info */
-      .contact-item {
-          display: flex;
-          align-items: flex-start;
-          margin-bottom: 15px;
-          font-size: 0.9rem;
-      }
-  
-      .contact-item i {
-          color: #28a745; /* Green icon color */
-          margin-right: 10px;
-          margin-top: 4px;
-      }
-  
-      .contact-item a {
-          color: #999;
-          text-decoration: none;
-      }
-  
-      /* Copyright Section */
-      .footer-bottom {
-          background-color: #0d0d0d;
-          padding: 15px 0;
-          border-top: 1px solid #222;
-          font-size: 0.8rem;
-          color: #999;
-      }
-  
-      /* Payment Icons - using FontAwesome placeholders for simplicity */
-      .payment-icons i {
-          font-size: 1.5rem;
-          color: #999;
-          margin-left: 10px;
-      }
-  
-      /* Scroll-to-top button */
-      .scroll-to-top {
-          position: absolute;
-          right: 20px;
-          bottom: 20px;
-          width: 40px;
-          height: 40px;
-          background-color: #28a745;
-          color: #fff;
-          border-radius: 50%;
-          text-align: center;
-          line-height: 40px;
-          font-size: 1.2rem;
-          cursor: pointer;
-          z-index: 20;
-          display: none; /* Hide by default, JS would handle visibility */
-      }
-      
-      .scroll-to-top i {
-          margin-top: 25%;
-      }
-  
-      @media (max-width: 991.98px) {
-          .suxmix-footer-top {
-              height: 150px; /* Smaller image banner on mobile/tablet */
-          }
-  
-          .suxmix-footer-content {
-              padding: 30px 0;
-          }
-  
-          .footer-title {
-              margin-top: 20px;
-          }
-      }
-      
-      @media (max-width: 767.98px) {
-          .leaf-overlay {
-              display: none; /* Hide complex overlays on small screens */
-          }
-          .suxmix-footer-top .image-col {
-              min-width: 100px;
-          }
-          .footer-bottom .text-md-end {
-              text-align: center !important;
-              margin-top: 10px;
-          }
-          .footer-bottom .text-start {
-              text-align: center !important;
-          }
-      }
-  </style>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Blog Details</title>
+    <style>
+        /* Internal CSS for the Footer */
+        .suxmix-footer {
+            background-color: #000;
+            color: #fff;
+            position: relative;
+            padding-top: 0;
+            /* Adjust padding due to the image banner */
+            overflow: hidden;
+            /* To handle the partial leaf image */
+        }
+
+        .suxmix-footer-top {
+            display: flex;
+            height: 250px;
+            /* Approximate height of the image banner */
+            overflow: hidden;
+        }
+
+        .suxmix-footer-top .image-col {
+            flex-grow: 1;
+            background-size: cover;
+            background-position: center;
+            /* Using placeholder background images since the original images aren't provided */
+            /* In a real project, you would use <img> tags or specific background image URLs */
+        }
+
+        .img-1 {
+            background-image: url('');
+        }
+
+        .img-2 {
+            background-image: url('');
+        }
+
+        .img-3 {
+            background-image: url('');
+        }
+
+        .img-4 {
+            background-image: url('');
+        }
+
+        .img-5 {
+            background-image: url('');
+        }
+
+        .suxmix-footer-content {
+            padding: 50px 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Styling for the leaf overlay - uses absolute positioning */
+        .leaf-overlay {
+            position: absolute;
+            width: 150px;
+            /* Adjust size as needed */
+            height: 100%;
+            top: 0;
+            z-index: 5;
+            background-repeat: no-repeat;
+            pointer-events: none;
+            /* Allows clicks to pass through */
+        }
+
+        /* Text and Link Styles */
+        .footer-logo-text {
+            display: inline-block;
+            margin-bottom: 5px;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .footer-logo-text small {
+            display: block;
+            font-weight: 400;
+            font-size: 0.75rem;
+            color: #ccc;
+        }
+
+        .footer-text {
+            font-size: 0.85rem;
+            color: #999;
+            line-height: 1.6;
+        }
+
+        .footer-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .footer-link-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-link-list li {
+            margin-bottom: 8px;
+        }
+
+        .footer-link-list li a {
+            color: #999;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-link-list li a:hover {
+            color: #fff;
+        }
+
+        /* Social Icons */
+        .social-icons a {
+            color: #fff;
+            font-size: 1rem;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid #444;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .social-icons a:hover {
+            background-color: #28a745;
+            /* Example hover color */
+            border-color: #28a745;
+        }
+
+        /* Contact Info */
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .contact-item i {
+            color: #28a745;
+            /* Green icon color */
+            margin-right: 10px;
+            margin-top: 4px;
+        }
+
+        .contact-item a {
+            color: #999;
+            text-decoration: none;
+        }
+
+        /* Copyright Section */
+        .footer-bottom {
+            background-color: #0d0d0d;
+            padding: 15px 0;
+            border-top: 1px solid #222;
+            font-size: 0.8rem;
+            color: #999;
+        }
+
+        /* Payment Icons - using FontAwesome placeholders for simplicity */
+        .payment-icons i {
+            font-size: 1.5rem;
+            color: #999;
+            margin-left: 10px;
+        }
+
+        /* Scroll-to-top button */
+        .scroll-to-top {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: #28a745;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            z-index: 20;
+            display: none;
+            /* Hide by default, JS would handle visibility */
+        }
+
+        .scroll-to-top i {
+            margin-top: 25%;
+        }
+
+        @media (max-width: 991.98px) {
+            .suxmix-footer-top {
+                height: 150px;
+                /* Smaller image banner on mobile/tablet */
+            }
+
+            .suxmix-footer-content {
+                padding: 30px 0;
+            }
+
+            .footer-title {
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .leaf-overlay {
+                display: none;
+                /* Hide complex overlays on small screens */
+            }
+
+            .suxmix-footer-top .image-col {
+                min-width: 100px;
+            }
+
+            .footer-bottom .text-md-end {
+                text-align: center !important;
+                margin-top: 10px;
+            }
+
+            .footer-bottom .text-start {
+                text-align: center !important;
+            }
+        }
+    </style>
 </head>
+</head>
+
 <body>
 
     <!-- Navbar Start -->
@@ -241,15 +272,15 @@
 
             <!-- Menu -->
             <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0"
-                    style="font-size:16px; font-weight:500;">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0" style="font-size:16px; font-weight:500;">
                     <li class="nav-item ps-2 pe-2"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#">Features</a></li>
                     <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#">Product</a></li>
                     <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#">Ingredient</a></li>
                     <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#">Pricing</a></li>
                     <li class="nav-item dropdown ps-2 pe-2">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Shop</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="our_shop.html">Our Shop</a></li>
                             <li><a class="dropdown-item" href="shop_detail.html">Shop Details</a></li>
@@ -259,7 +290,8 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown ps-2 pe-2">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">News</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">News</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="our_blog.html">Our Blog</a></li>
                             <li><a class="dropdown-item" href="blog_details.html">Blog Details</a></li>
@@ -271,11 +303,13 @@
                 <!-- Icons (Cart, Search, Menu Button) -->
                 <div class="d-flex align-items-center gap-3">
                     <!-- Cart -->
-                    <a href="#" style="position:relative;"><i class="bi bi-cart3 ps-2 pe-2" style="font-size:22px;color: #009444;"></i></a>
+                    <a href="#" style="position:relative;"><i class="bi bi-cart3 ps-2 pe-2"
+                            style="font-size:22px;color: #009444;"></i></a>
                     <!-- Search -->
                     <a href="#"><i class="bi bi-search ps-2 pe-2" style="font-size:22px;color: #009444;"></i></a>
                     <!-- Grid Icon -->
-                    <a href="#"><i class="bi bi-grid-3x3-gap-fill ps-2 pe-2" style="font-size:22px;color: #009444;"></i></a>
+                    <a href="#"><i class="bi bi-grid-3x3-gap-fill ps-2 pe-2"
+                            style="font-size:22px;color: #009444;"></i></a>
                 </div>
             </div>
         </div>
@@ -306,7 +340,8 @@
                         </div>
 
                         <div class="container mt-2">
-                            <h2 style="font-weight: 700;">Laboris nisi ut aliquip ex ea commodo consequat, Duis aute irure dolor.</h2>
+                            <h2 style="font-weight: 700;">Laboris nisi ut aliquip ex ea commodo consequat, Duis aute
+                                irure dolor.</h2>
                         </div>
 
                         <div class="container">
@@ -322,43 +357,80 @@
                         </div>
 
                         <div class="container">
-                            <p style="font-size: 13px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora et dolore magnam aliquam quaerat voluptatem.
-                            <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                            <p style="font-size: 13px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+                                voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                                inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                                ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                                dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+                                eius modi tempora et dolore magnam aliquam quaerat voluptatem.
+                                <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                            </p>
                         </div>
-                        
+
                         <div class="container">
-                            <img src="/image/imgi_5_inner_blog_thumb03.jpg" alt="" class="img-fluid" style="height: 350px;">
+                            <img src="/image/imgi_5_inner_blog_thumb03.jpg" alt="" class="img-fluid"
+                                style="height: 350px;">
                         </div>
 
                         <div class="container mt-5">
                             <h3 style="font-weight: 600;">A cleansing hot shower or bath</h3>
-                            <p style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                            <p style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt.</p>
                         </div>
 
                         <div class="container mt-5">
                             <h3 style="font-weight: 600;">Setting the mood with incense</h3>
-                            <p style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                            <p style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt.</p>
                         </div>
 
                         <div class="container mt-5">
                             <h3 style="font-weight: 600;">Setting the mood with incense</h3>
-                            <p style="font-size: 13px;"><i class="fa-regular fa-check text-success"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
-                            <p style="font-size: 13px;"><i class="fa-regular fa-check text-success"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
-                            <p style="font-size: 13px;"><i class="fa-regular fa-check text-success"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
-                            <p style="font-size: 13px;"><i class="fa-regular fa-check text-success"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
-                            <p style="font-size: 13px;"><i class="fa-regular fa-check text-success"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                            <p style="font-size: 13px;"><i class="fa-regular fa-check text-success"></i> Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                            <p style="font-size: 13px;"><i class="fa-regular fa-check text-success"></i> Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                            <p style="font-size: 13px;"><i class="fa-regular fa-check text-success"></i> Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                            <p style="font-size: 13px;"><i class="fa-regular fa-check text-success"></i> Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                            <p style="font-size: 13px;"><i class="fa-regular fa-check text-success"></i> Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit, sed do.</p>
                         </div>
 
                         <div class="container-fluid mt-5 bg-success p-5">
                             <center>
                                 <p class="text-light">BY HETMAYAR</p>
-                                <h3 class="text-light fw-bolder">Viral dreamcatcher keytar typewriter aest <br> hetic offal umami. Aesthetic polaroid pug <br> pitchfork post-ironic.</p>
+                                <h3 class="text-light fw-bolder">Viral dreamcatcher keytar typewriter aest <br> hetic
+                                    offal umami. Aesthetic polaroid pug <br> pitchfork post-ironic.</p>
                             </center>
                         </div>
 
                         <div class="container p-0 mt-5">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa temporibus iusto amet perferendis accusantium optio voluptate beatae, quam adipisci asperiores quis expedita at similique aspernatur nostrum illum aliquid repellat illo.</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsa doloribus porro? Et mollitia reprehenderit culpa dolores optio, error numquam, architecto nihil nemo ratione, quidem voluptas ipsam ducimus deserunt quod.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa temporibus iusto amet
+                                perferendis accusantium optio voluptate beatae, quam adipisci asperiores quis expedita
+                                at similique aspernatur nostrum illum aliquid repellat illo.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsa doloribus porro? Et
+                                mollitia reprehenderit culpa dolores optio, error numquam, architecto nihil nemo
+                                ratione, quidem voluptas ipsam ducimus deserunt quod.</p>
                         </div>
 
                         <div class="post-footer">
@@ -436,7 +508,8 @@
                             </div>
                             <div class="about-name">Rosalina D. Williamson</div>
                             <div class="about-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt
+                                ut labore.
                             </div>
                             <div class="social-icons">
                                 <i class="fab fa-facebook-f"></i>
@@ -533,7 +606,8 @@
                             <div class="tweet">
                                 <i class="fab fa-twitter"></i>
                                 <div>
-                                    <p>Rescue - #Gutenberg ready @wordpress Theme for Creative Bloggers available on @ThemeForest<a href="#"></a>
+                                    <p>Rescue - #Gutenberg ready @wordpress Theme for Creative Bloggers available on
+                                        @ThemeForest<a href="#"></a>
                                     </p>
                                     <small>November 29, 2024</small>
                                 </div>
@@ -541,7 +615,8 @@
                             <div class="tweet">
                                 <i class="fab fa-twitter"></i>
                                 <div>
-                                    <p>Rescue - #Gutenberg ready @wordpress Theme for Creative Bloggers available on @ThemeForest<a href="#"></a>
+                                    <p>Rescue - #Gutenberg ready @wordpress Theme for Creative Bloggers available on
+                                        @ThemeForest<a href="#"></a>
                                     </p>
                                     <small>November 29, 2024</small>
                                 </div>
@@ -549,7 +624,8 @@
                             <div class="tweet">
                                 <i class="fab fa-twitter"></i>
                                 <div>
-                                    <p>Rescue - #Gutenberg ready @wordpress Theme for Creative Bloggers available on @ThemeForest<a href="#"></a>
+                                    <p>Rescue - #Gutenberg ready @wordpress Theme for Creative Bloggers available on
+                                        @ThemeForest<a href="#"></a>
                                     </p>
                                     <small>November 29, 2024</small>
                                 </div>
@@ -594,7 +670,7 @@
             </div>
         </div>
     </div>
-    
+
 
 
     <div class="container">
@@ -607,111 +683,109 @@
         </div>
     </div>
     <!-- Footer Section -->
-        <footer class="suxmix-footer">
-    <div class="suxmix-footer-content">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fas fa-dumbbell fa-2x text-success me-2"></i>
-                        <span class="footer-logo-text">
-                            Suxmix
-                            <small>Power Supplement</small>
-                        </span>
+    <footer class="suxmix-footer">
+        <div class="suxmix-footer-content">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-dumbbell fa-2x text-success me-2"></i>
+                            <span class="footer-logo-text">
+                                Suxmix
+                                <small>Power Supplement</small>
+                            </span>
+                        </div>
+                        <p class="footer-text mb-4">
+                            Making beauty especially relating complot especial common questions tend to recur through
+                            posts or queries standards vary orem donor command tei.
+                        </p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
-                    <p class="footer-text mb-4">
-                        Making beauty especially relating complot especial common questions tend to recur through posts or queries standards vary orem donor command tei.
-                    </p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <h5 class="footer-title">About Us</h5>
+                        <ul class="footer-link-list">
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Product</a></li>
+                        </ul>
                     </div>
-                </div>
-                
-                <div class="col-lg-2 col-md-4 col-6">
-                    <h5 class="footer-title">About Us</h5>
-                    <ul class="footer-link-list">
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">Product</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-2 col-md-4 col-6">
-                    <h5 class="footer-title">Support</h5>
-                    <ul class="footer-link-list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">Blog Post</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-4 col-md-4">
-                    <h5 class="footer-title">Contact Us</h5>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>4140 Parker Rd. Allentown, New Mexico 31134</span>
+
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <h5 class="footer-title">Support</h5>
+                        <ul class="footer-link-list">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Blog Post</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <a href="tel:+13165550116">+1-31-6555-0116</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:suxmix@example.com">suxmix@example.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-globe"></i>
-                        <a href="#">www.suxmixdomain.com</a>
+
+                    <div class="col-lg-4 col-md-4">
+                        <h5 class="footer-title">Contact Us</h5>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>4140 Parker Rd. Allentown, New Mexico 31134</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:+13165550116">+1-31-6555-0116</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:suxmix@example.com">suxmix@example.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-globe"></i>
+                            <a href="#">www.suxmixdomain.com</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start">
-                    Copyright &copy; 2025 Suxmix All Rights Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end payment-icons">
-                    <i class="fab fa-cc-paypal"></i>
-                    <i class="fab fa-cc-visa"></i>
-                    <i class="fab fa-cc-mastercard"></i>
-                    <i class="fab fa-cc-amex"></i>
-                    <i class="fab fa-cc-discover"></i>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        Copyright &copy; 2025 Suxmix All Rights Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end payment-icons">
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-discover"></i>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="scroll-to-top" id="scrollToTopBtn">
-        <i class="fas fa-chevron-up"></i>
-    </div>
-</footer>
 
-        <button id="topBtn" onclick="topFunction()" style="position: fixed;bottom: 20px;right: 20px;padding: 10px 14px;font-size: 20px;background: #009444;color: white;border: none;border-radius: 50%;display: none;cursor: pointer;z-index: 9999;">
-            <i class="fa-solid fa-angle-up"></i>
-        </button>
+        <div class="scroll-to-top" id="scrollToTopBtn">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </footer>
+
+    <button id="topBtn" onclick="topFunction()"
+        style="position: fixed;bottom: 20px;right: 20px;padding: 10px 14px;font-size: 20px;background: #009444;color: white;border: none;border-radius: 50%;display: none;cursor: pointer;z-index: 9999;">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
 
 
-            <!-- Bootstrap icons -->
-            <link
-                href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-                rel="stylesheet">
-            <script
-                src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-            <script
-                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-            <script
-                src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-            <script src="script.js"></script>
+    <!-- Bootstrap icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 
-        </body>
-    </html>
+</body>
+
+</html>
