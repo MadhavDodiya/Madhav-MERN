@@ -23,9 +23,8 @@
     </head>
     <body>
         <!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg bg-white shadow-sm"
-        style="padding: 10px 20px;z-index: 100;">
-        <div class="container-fluid">
+<nav class="navbar navbar-expand-lg bg-white shadow-sm" style="padding: 10px 20px;position: fixed;z-index: 100;">
+    <div class="container-fluid">
 
             <!-- Logo -->
             <a class="navbar-brand d-flex align-items-center" href="#"
@@ -41,34 +40,29 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Menu -->
-            <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0"
-                    style="font-size:16px; font-weight:500;">
-                    <li class="nav-item ps-2 pe-2"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#">Features</a></li>
-                    <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#">Product</a></li>
-                    <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#">Ingredient</a></li>
-                    <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#">Pricing</a></li>
-                    <li class="nav-item dropdown ps-2 pe-2">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="our_shop.html">Our Shop</a></li>
-                            <li><a class="dropdown-item" href="shop_detail.html">Shop Details</a></li>
-                            <li><a class="dropdown-item" href="cart_page.html">Cart Page</a></li>
-                            <li><a class="dropdown-item" href="loginpage.html">Login Page</a></li>
-                            <li><a class="dropdown-item" href="register.html">Register</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown ps-2 pe-2">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">News</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="our_blog.html">Our Blog</a></li>
-                            <li><a class="dropdown-item" href="blog_details.html">Blog Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item ps-2 pe-2"><a class="nav-link" href="contact.html">Contacts</a></li>
-                </ul>
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0" style="font-size:16px; font-weight:500;">
+                <li class="nav-item ps-2 pe-2"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#feature">Features</a></li>
+                <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#product">Product</a></li>
+                <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#Ingrediant">Ingredient</a></li>
+                <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#pricing">Pricing</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                        Shop
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="our_shop.html">Our Shop</a></li>
+                        <li><a class="dropdown-item" href="shop_detail.html">Shop Details</a></li>
+                        <li><a class="dropdown-item" href="cart_page.html">Cart Page</a></li>
+                        <li><a class="dropdown-item" href="loginpage.html">Login Page</a></li>
+                        <li><a class="dropdown-item" href="register.html">Register</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#">News</a></li>
+                <li class="nav-item ps-2 pe-2"><a class="nav-link" href="contact.html">Contacts</a></li>
+            </ul>
 
                 <!-- Icons (Cart, Search, Menu Button) -->
                 <div class="d-flex align-items-center gap-3">
@@ -299,79 +293,79 @@
     </div>
   </div>
 
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="slideshow-container">
-                        <div class="mySlidefade">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="slideshow-container">
+          <div class="mySlidefade">
 
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card card1">
-                            <center>
-                                <img src="/image/features_product01.png" alt="" style="height: 150px;margin: 50px 0px;">
-                            </center>
-                            <h5 class="px-5 txt1"><b>PROTEIN POWDER 2KG</b></h5>
-                            <h5 class="px-5 "><b>TK 85.99</b></h5>
-                            <div class="px-5">
-                                <i class="fa-solid fa-star clr1"></i>
-                            <i class="fa-solid fa-star clr1"></i>
-                            <i class="fa-solid fa-star clr1"></i>
-                            <i class="fa-solid fa-star clr1"></i>
-                            <i class="fa-solid fa-star-half-stroke clr1"></i>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <button class="btn3 mx-4 my-5"><i class="fa-solid fa-basket-shopping"></i></button>
-                                <button class="btn4 px-3 py-2 mx-5">SHOP NOW</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card card1">
-                            <center>
-                                <img src="/image/features_product02.png" alt="" style="height: 150px;margin: 50px 0px;">
-                            </center>
-                            <h5 class="px-5 txt1"><b>PROTEIN POWDER 2KG</b></h5>
-                            <h5 class="px-5 "><b>TK 85.99</b></h5>
-                            <div class="px-5">
-                                <i class="fa-solid fa-star clr1"></i>
-                            <i class="fa-solid fa-star clr1"></i>
-                            <i class="fa-solid fa-star clr1"></i>
-                            <i class="fa-solid fa-star clr1"></i>
-                            <i class="fa-solid fa-star-half-stroke clr1"></i>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <button class="btn3 mx-4 my-5"><i class="fa-solid fa-basket-shopping"></i></button>
-                                <button class="btn4 px-3 py-2 mx-5">SHOP NOW</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card card1">
-                            <center>
-                                <img src="/image/imgi_25_home_shop_thumb03.png" alt="" style="height: 150px;margin: 50px 0px;">
-                            </center>
-                            <h5 class="px-5 txt1"><b>PROTEIN POWDER 2KG</b></h5>
-                            <h5 class="px-5 "><b>TK 85.99</b></h5>
-                            <div class="px-5">
-                                <i class="fa-solid fa-star clr1"></i>
-                                <i class="fa-solid fa-star clr1"></i>
-                                <i class="fa-solid fa-star clr1"></i>
-                                <i class="fa-solid fa-star clr1"></i>
-                                <i class="fa-solid fa-star-half-stroke clr1"></i>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <button class="btn3 mx-4 my-5"><i class="fa-solid fa-basket-shopping"></i></button>
-                                <button class="btn4 px-3 py-2 mx-5">SHOP NOW</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col-md-4">
+          <div class="card card1">
+            <center>
+              <img src="/image/features_product01.png" alt="" style="height: 150px;margin: 50px 0px;">
+            </center>
+            <h5 class="px-5 txt1"><b>PROTEIN POWDER 2KG</b></h5>
+            <h5 class="px-5 "><b>TK 85.99</b></h5>
+            <div class="px-5">
+              <i class="fa-solid fa-star clr1"></i>
+              <i class="fa-solid fa-star clr1"></i>
+              <i class="fa-solid fa-star clr1"></i>
+              <i class="fa-solid fa-star clr1"></i>
+              <i class="fa-solid fa-star-half-stroke clr1"></i>
+            </div>
+            <div class="d-flex align-items-center">
+              <button class="btn3 mx-4 my-5"><i class="fa-solid fa-basket-shopping"></i></button>
+              <button class="btn4 px-3 py-2 mx-5">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card1">
+            <center>
+              <img src="/image/features_product02.png" alt="" style="height: 150px;margin: 50px 0px;">
+            </center>
+            <h5 class="px-5 txt1"><b>PROTEIN POWDER 2KG</b></h5>
+            <h5 class="px-5 "><b>TK 85.99</b></h5>
+            <div class="px-5">
+              <i class="fa-solid fa-star clr1"></i>
+              <i class="fa-solid fa-star clr1"></i>
+              <i class="fa-solid fa-star clr1"></i>
+              <i class="fa-solid fa-star clr1"></i>
+              <i class="fa-solid fa-star-half-stroke clr1"></i>
+            </div>
+            <div class="d-flex align-items-center">
+              <button class="btn3 mx-4 my-5"><i class="fa-solid fa-basket-shopping"></i></button>
+              <button class="btn4 px-3 py-2 mx-5">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card1">
+            <center>
+              <img src="/image/imgi_25_home_shop_thumb03.png" alt="" style="height: 150px;margin: 50px 0px;">
+            </center>
+            <h5 class="px-5 txt1"><b>PROTEIN POWDER 2KG</b></h5>
+            <h5 class="px-5 "><b>TK 85.99</b></h5>
+            <div class="px-5">
+              <i class="fa-solid fa-star clr1"></i>
+              <i class="fa-solid fa-star clr1"></i>
+              <i class="fa-solid fa-star clr1"></i>
+              <i class="fa-solid fa-star clr1"></i>
+              <i class="fa-solid fa-star-half-stroke clr1"></i>
+            </div>
+            <div class="d-flex align-items-center">
+              <button class="btn3 mx-4 my-5"><i class="fa-solid fa-basket-shopping"></i></button>
+              <button class="btn4 px-3 py-2 mx-5">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="container-fluid m-0 p-0"
     style="margin: 0%;background-image:url('/image/video_bg_8112a5ce-2dd0-45f9-ac62-fd4d1b132944.jpg');height: 500px;width: 100%;background-position: center;background-size: cover;background-repeat: no-repeat;">
