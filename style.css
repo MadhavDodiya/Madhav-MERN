@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
@@ -440,8 +440,8 @@ body {
   background-image: url('/image/imgi_66_inner_blog_thumb02.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
-  width: auto;
+  height: 500px;
+  width: 100%;
 }
 
 /* Card design */
