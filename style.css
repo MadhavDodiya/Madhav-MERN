@@ -90,9 +90,22 @@ body {
 
 .btn1 {
   border: none;
-  padding: 10px 50px;
+  padding: 10px 30px;
   border-radius: 50px;
   margin-top: 0px;
+  background-color: #f7a600;
+  color: white;
+  transition: 0.5s;
+}
+
+.btn1:hover {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  margin-top: 0px;
+  background-color: #059142;
+  color: white;
+  transition: 0.5s;
 }
 
 .line {
