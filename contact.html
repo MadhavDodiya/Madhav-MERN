@@ -200,7 +200,7 @@
       .scroll-to-top i {
           margin-top: 25%;
       }
-  
+
       @media (max-width: 991.98px) {
           .suxmix-footer-top {
               height: 150px; /* Smaller image banner on mobile/tablet */
@@ -239,8 +239,7 @@
             <!-- Logo -->
             <a class="navbar-brand d-flex align-items-center" href="#"
                 style="font-weight:700;">
-                <img src="/image/logo.png" alt="Logo"
-                    style="height:40px; margin-right:5px;">
+                <img src="/image/logo.png" alt="Logo" style="height:40px; margin-right:5px;">
             </a>
             <!-- Mobile Toggle -->
             <button class="navbar-toggler" type="button"
@@ -416,25 +415,42 @@
         </div>
     </div>
 
-    <!-- Top Image Section -->
+    <!-- Top Image Section
     <div class="container-fluid p-0" style="overflow:hidden;">
         <div class="container">
             <div class="row g-0">
-                <div class="col gym-img1"></div>
-                <div class="col gym-img2"></div>
-                <div class="col gym-img3"></div>
-                <div class="col gym-img4"></div>
-                <div class="col gym-img5"></div>
+                <div class="col col-6 gym-img1"></div>
+                <div class="col col-6 gym-img2"></div>
+                <div class="col col-6 gym-img3"></div>
+                <div class="col col-6 gym-img4"></div>
+                <div class="col col-6 gym-img5"></div>
             </div>
+        </div>
+    </div> -->
+
+    <!-- Instagram Gallery Section -->
+    <div class="container gallery-wrapper">
+        <div class="gallery-track">
+            <img src="/image/imgi_44_instagram_post02_a85b661a-67ea-4a36-ad29-c9e84ee797ae.jpg" alt="">
+            <img src="/image/imgi_45_instagram_post03_8902567f-4641-4a0d-8a5d-d9ab44870ead.jpg" alt="">
+            <img src="/image/imgi_46_instagram_post04_f36edf63-f2ee-407c-ad8f-24edd6fcf69d.jpg" alt="">
+            <img src="/image/imgi_47_instagram_post05_076fdf6c-6ffe-45f7-8388-6900702b3b4b.jpg" alt="">
+            <img src="/image/imgi_48_instagram_post06_ec34de05-56ce-4943-96eb-fdbc6f239030.jpg" alt="">
+                
+            <!-- duplicate images for smooth loop -->
+            <img src="/image/imgi_49_instagram_post01_e129213d-f718-4e47-a5f4-d6ec8f7ab64d.jpg" alt="">
+            <img src="/image/imgi_44_instagram_post02_a85b661a-67ea-4a36-ad29-c9e84ee797ae.jpg" alt="">
+            <img src="/image/imgi_45_instagram_post03_8902567f-4641-4a0d-8a5d-d9ab44870ead.jpg" alt="">
+            <img src="/image/imgi_46_instagram_post04_f36edf63-f2ee-407c-ad8f-24edd6fcf69d.jpg" alt="">
+            <img src="/image/imgi_47_instagram_post05_076fdf6c-6ffe-45f7-8388-6900702b3b4b.jpg" alt="">
         </div>
     </div>
 
-    <!-- Footer Section -->
-    <footer class="suxmix-footer">
+<!-- Footer Section -->
+<footer class="suxmix-footer">
     <div class="suxmix-footer-content">
         <div class="container">
             <div class="row">
-                
                 <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
                     <div class="d-flex align-items-center mb-3">
                         <i class="fas fa-dumbbell fa-2x text-success me-2"></i>
@@ -519,15 +535,15 @@
     </div>
 </footer>
 
-    <button id="topBtn" onclick="topFunction()" style="position: fixed;bottom: 20px;right: 20px;padding: 10px 14px;font-size: 20px;background: #009444;color: white;border: none;
+<button id="topBtn" onclick="topFunction()" style="position: fixed;bottom: 20px;right: 20px;padding: 10px 14px;font-size: 20px;background: #009444;color: white;border: none;
         border-radius: 50%;
         display: none;
         cursor: pointer;
         z-index: 9999;
-    ">
+        ">
         <i class="fa-solid fa-angle-up"></i>
     </button>
-
+    
     <!-- Bootstrap icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

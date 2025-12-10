@@ -1365,6 +1365,47 @@ textarea {
   text-decoration: underline;
 }
 
+.gallery-wrapper {
+    overflow: hidden;
+    background: none;
+    padding: 0 0;
+}
+
+.gallery-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 25s linear infinite;
+}
+
+.gallery-track img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 0px;
+    border-radius: 0px;
+    transition: transform .4s ease;
+}
+
+.gallery-track img:hover {
+    transform: scale(1);
+}
+
+/* Auto scrolling */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .gallery-track img {
+        width: 200px;
+        height: 200px;
+        margin: 0 0px;
+    }
+}
+
+
 /* Hover open on desktop */
 @media (min-width: 992px) {
   .nav-item.dropdown:hover .dropdown-menu {
