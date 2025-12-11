@@ -256,67 +256,68 @@
 
 <body>
 
-      <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top" style="z-index: 20;top:0; width:100%;">
-    <div class="container-fluid">
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top" style="z-index:20; top:0; width:100%;">
+  <div class="container-fluid">
 
-      <!-- Logo -->
-      <a class="navbar-brand d-flex align-items-center" href="#" style="font-weight:700;">
-        <img src="/image/logo.png" class="img-fluid" alt="Logo" style="height:40px; margin-right:5px;">
-      </a>
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#" style="font-weight:700;">
+      <img src="/image/logo.png" class="img-fluid" alt="Logo" style="height:40px; margin-right:5px;">
+    </a>
 
-      <!-- Mobile Toggle -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <!-- Menu -->
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0" style="font-size:16px; font-weight:500;">
-          <li class="nav-item ps-2 pe-2"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#feature">Features</a></li>
-          <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#product">Product</a></li>
-          <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#Ingredient">Ingredient</a></li>
-          <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#pricing">Pricing</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle ps-2 pe-2" href="#" data-bs-toggle="dropdown">
-              Shop
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="our_shop.html">Our Shop</a></li>
-              <li><a class="dropdown-item" href="shop_detail.html">Shop Details</a></li>
-              <li><a class="dropdown-item" href="cart_page.html">Cart Page</a></li>
-              <li><a class="dropdown-item" href="loginpage.html">Login Page</a></li>
-              <li><a class="dropdown-item" href="register.html">Register</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown ps-2 pe-2">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">News</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="our_blog.html">Our Blog</a></li>
-              <li><a class="dropdown-item" href="blog_details.html">Blog Details</a></li>
-            </ul>
-          </li>
-          <li class="nav-item ps-2 pe-2"><a class="nav-link" href="contact.html">Contacts</a></li>
-        </ul>
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0" style="font-size:16px; font-weight:500;">
+        <li class="nav-item ps-2 pe-2"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#feature">Features</a></li>
+        <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#product">Product</a></li>
+        <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#Ingredient">Ingredient</a></li>
+        <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#pricing">Pricing</a></li>
 
-        <!-- Icons (Cart, Search, Menu Button) -->
-        <div class="d-flex align-items-center gap-3">
+        <!-- Shop dropdown (fixed data-bs-toggle) -->
+        <li class="nav-item dropdown ps-2 pe-2">
+          <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false">
+            Shop
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+            <li><a class="dropdown-item" href="our_shop.html">Our Shop</a></li>
+            <li><a class="dropdown-item" href="shop_detail.html">Shop Details</a></li>
+            <li><a class="dropdown-item" href="cart_page.html">Cart Page</a></li>
+            <li><a class="dropdown-item" href="loginpage.html">Login Page</a></li>
+            <li><a class="dropdown-item" href="register.html">Register</a></li>
+          </ul>
+        </li>
 
-          <!-- Cart -->
-          <a href="#" style="position:relative;"><i class="bi bi-cart3 ps-2 pe-2"
-              style="font-size:22px;color: #009444;"></i></a>
-          <!-- Search -->
-          <a href="#"><i class="bi bi-search ps-2 pe-2" style="font-size:22px;color: #009444;"></i></a>
-          <!-- Grid Icon -->
-          <a href="#"><i class="bi bi-grid-3x3-gap-fill ps-2 pe-2" style="font-size:22px;color: #009444;"></i></a>
+        <!-- News dropdown -->
+        <li class="nav-item dropdown ps-2 pe-2">
+          <a class="nav-link dropdown-toggle" href="#" id="newsDropdown" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false">News</a>
+          <ul class="dropdown-menu" aria-labelledby="newsDropdown">
+            <li><a class="dropdown-item" href="our_blog.html">Our Blog</a></li>
+            <li><a class="dropdown-item" href="blog_details.html">Blog Details</a></li>
+          </ul>
+        </li>
 
-        </div>
+        <li class="nav-item ps-2 pe-2"><a class="nav-link" href="contact.html">Contacts</a></li>
+      </ul>
+
+      <!-- Icons (Cart, Search, Grid) -->
+      <div class="d-flex align-items-center gap-3">
+        <a href="#" style="position:relative;"><i class="bi bi-cart3 ps-2 pe-2" style="font-size:22px;color:#009444;"></i></a>
+        <a href="#"><i class="bi bi-search ps-2 pe-2" style="font-size:22px;color:#009444;"></i></a>
+        <a href="#"><i class="bi bi-grid-3x3-gap-fill ps-2 pe-2" style="font-size:22px;color:#009444;"></i></a>
       </div>
     </div>
-  </nav>
-  <!-- Navbar End -->
+  </div>
+</nav>
+<!-- Navbar End -->
     <div class="container-fluid  bg-img4 m-0 p-0" style="height: 500px;">
         <div class="container-fluid p-0 m-0" style="background-color: #0000008a;height: 500px;padding: 0px;">
             <center>
@@ -359,7 +360,7 @@
             <button type="submit" class="btn btn-signup w-100">Sign Up</button>
             <div class="text-center mt-3">
                 Already have an account?
-                <a href="loginpage.html" style="color:#d46b47;">Login</a>
+                <a href="#" style="color:#d46b47;">Login</a>
             </div>
         </form>
     </div>
@@ -409,19 +410,19 @@
                     <div class="col-lg-2 col-md-4 col-6">
                         <h5 class="footer-title">About Us</h5>
                         <ul class="footer-link-list">
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Blogs</a></li>
+                            <li><a href="our_shop.html">Shop</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="our_blog.html">Blogs</a></li>
                             <li><a href="#">Product</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-2 col-md-4 col-6">
                         <h5 class="footer-title">Support</h5>
                         <ul class="footer-link-list">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Blogs</a></li>
-                            <li><a href="#">Blog Post</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="our_blog.html">Blogs</a></li>
+                            <li><a href="blog_details.html">Blog Post</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-4">

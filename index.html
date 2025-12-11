@@ -226,7 +226,7 @@
 
 <body>
 <!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top" style="z-index: 50; top:0; width:100%;">
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top" style="z-index:20; top:0; width:100%;">
   <div class="container-fluid">
 
     <!-- Logo -->
@@ -235,65 +235,62 @@
     </a>
 
     <!-- Mobile Toggle -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-      data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
-      aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-      <!-- Menu -->
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0" style="font-size:16px; font-weight:500;">
-          <li class="nav-item ps-2 pe-2"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#feature">Features</a></li>
-          <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#product">Product</a></li>
-          <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#Ingredient">Ingredient</a></li>
-          <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#pricing">Pricing</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-              Shop
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="our_shop.html">Our Shop</a></li>
-              <li><a class="dropdown-item" href="shop_detail.html">Shop Details</a></li>
-              <li><a class="dropdown-item" href="cart_page.html">Cart Page</a></li>
-              <li><a class="dropdown-item" href="loginpage.html">Login Page</a></li>
-              <li><a class="dropdown-item" href="register.html">Register</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown ps-2 pe-2">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">News</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="our_blog.html">Our Blog</a></li>
-              <li><a class="dropdown-item" href="blog_details.html">Blog Details</a></li>
-            </ul>
-          </li>
-          <li class="nav-item ps-2 pe-2"><a class="nav-link" href="contact.html">Contacts</a></li>
-        </ul>
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0" style="font-size:16px; font-weight:500;">
+        <li class="nav-item ps-2 pe-2"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#feature">Features</a></li>
+        <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#product">Product</a></li>
+        <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#Ingredient">Ingredient</a></li>
+        <li class="nav-item ps-2 pe-2"><a class="nav-link" href="#pricing">Pricing</a></li>
 
-      <!-- Icons -->
+        <!-- Shop dropdown (fixed data-bs-toggle) -->
+        <li class="nav-item dropdown ps-2 pe-2">
+          <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false">
+            Shop
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+            <li><a class="dropdown-item" href="our_shop.html">Our Shop</a></li>
+            <li><a class="dropdown-item" href="shop_detail.html">Shop Details</a></li>
+            <li><a class="dropdown-item" href="cart_page.html">Cart Page</a></li>
+            <li><a class="dropdown-item" href="loginpage.html">Login Page</a></li>
+            <li><a class="dropdown-item" href="register.html">Register</a></li>
+          </ul>
+        </li>
+
+        <!-- News dropdown -->
+        <li class="nav-item dropdown ps-2 pe-2">
+          <a class="nav-link dropdown-toggle" href="#" id="newsDropdown" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false">News</a>
+          <ul class="dropdown-menu" aria-labelledby="newsDropdown">
+            <li><a class="dropdown-item" href="our_blog.html">Our Blog</a></li>
+            <li><a class="dropdown-item" href="blog_details.html">Blog Details</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item ps-2 pe-2"><a class="nav-link" href="contact.html">Contacts</a></li>
+      </ul>
+
+      <!-- Icons (Cart, Search, Grid) -->
       <div class="d-flex align-items-center gap-3">
-        <a href="#" style="position:relative;">
-          <i class="bi bi-cart3 ps-2 pe-2" style="font-size:22px;color:#009444;"></i>
-        </a>
-        <a href="#">
-          <i class="bi bi-search ps-2 pe-2" style="font-size:22px;color:#009444;"></i>
-        </a>
-        <a href="#" id="openSidebar">
-          <i class="bi bi-grid-3x3-gap-fill fs-5 text-success"></i>
-        </a>
+        <a href="#" style="position:relative;"><i class="bi bi-cart3 ps-2 pe-2" style="font-size:22px;color:#009444;"></i></a>
+        <a href="#"><i class="bi bi-search ps-2 pe-2" style="font-size:22px;color:#009444;"></i></a>
+        <a href="#"><i class="bi bi-grid-3x3-gap-fill ps-2 pe-2" style="font-size:22px;color:#009444;"></i></a>
       </div>
-
     </div>
   </div>
 </nav>
-
-  <!-- Navbar End -->
+<!-- Navbar End -->
 
   <div class="container-fluid">
-    <img src="/image/banner_shape01.png" alt="" class="img-fluid" style="left: 0%;position: absolute;">
-    <img src="/image/banner_shape02.png" alt="" class="img-fluid" style="right: 0%;position: absolute;">
+    <img src="/image/banner_shape01.png" alt="" class="img-fluid" style="left: 0%;position: absolute;z-index: -1;">
+    <img src="/image/banner_shape02.png" alt="" class="img-fluid" style="right: 0%;position: absolute;z-index: -1;">
     <div class="container col-sm-12 col-12">
       <center>
         <p style="color: #f57c00;font-size: 15px;"><b>..INCRESED ENERGY WITH SUXNIX..</b></p>
@@ -303,9 +300,9 @@
     </div>
     <div class="container col-sm-12 col-12" style="background-image: url('/image/banner_round_bg_b113813b-23c3-450b-846b-d4d4d9541856.png');background-position: center;background-repeat: no-repeat;position: relative;padding: 150px 0px 0px 0px;">
       <center>
-        <img src="/image/banner_shape03.png" alt="" class="img-fluid" style="position: absolute;bottom: 0;left: 0%;right: 0%;">
+        <img src="/image/banner_shape03.png" alt="" class="img-fluid" style="position: absolute;bottom: 0;left: 0%;right: 0%;z-index: -1;">
         <img src="/image/banner_img01_4dfc6924-a7d3-4e69-abc4-4e1199127900.png" alt="" class="img-fluid" style="position: relative;">
-        <img src="/image/banner_shape04.png" alt="" class="img-fluid" style="position: absolute;bottom: 0%;right: 0%;">
+        <img src="/image/banner_shape04.png" alt="" class="img-fluid" style="position: absolute;bottom: 0%;right: 0%;z-index: -1;">
       </center>
     </div>
   </div>
@@ -377,7 +374,7 @@
 
   <div class="container-fluid mt-5 mb-5" id="product">
     <center>
-      <img src="/image/banner_shape02.png" alt="" srcset="" class="img-fluid mt-5" style="width: auto;height: auto;right: 0%;position: absolute;">
+      <img src="/image/banner_shape02.png" alt="" srcset="" class="img-fluid mt-5" style="width: auto;height: auto;right: 0%;position: absolute;z-index: -1;">
     </center>
     <div class="container">
       <div class="row">
@@ -406,7 +403,7 @@
 
   <div class="container-fluid mt-5 mb-5">
     <center>
-      <img src="/image/banner_shape01.png" alt="" srcset="" class="img-fluid mt-5" style="width: auto;height: auto;left: 0%;position: absolute;">
+      <img src="/image/banner_shape01.png" alt="" srcset="" class="img-fluid mt-5" style="width: auto;height: auto;left: 0%;position: absolute;z-index: -1;">
     </center>
     <div class="container">
       <div class="row">
@@ -434,7 +431,7 @@
 
   <div class="container-fluid mt-5 mb-5">
     <center>
-      <img src="/image/banner_shape02.png" alt="" srcset="" class="img-fluid" style="width: auto;height: auto;right: 0%;position: absolute;">
+      <img src="/image/banner_shape02.png" alt="" srcset="" class="img-fluid" style="width: auto;height: auto;right: 0%;position: absolute;z-index: -1;">
     </center>
     <div class="container">
       <div class="row">
@@ -1054,9 +1051,9 @@
           <div class="col-lg-2 col-md-4 col-6">
             <h5 class="footer-title">About Us</h5>
             <ul class="footer-link-list">
-              <li><a href="#">Shop</a></li>
+              <li><a href="our_shop.html">Shop</a></li>
               <li><a href="/contact.html">Contact</a></li>
-              <li><a href="#">Blogs</a></li>
+              <li><a href="our_blog.html">Blogs</a></li>
               <li><a href="#product">Product</a></li>
             </ul>
           </div>
@@ -1064,10 +1061,10 @@
           <div class="col-lg-2 col-md-4 col-6">
             <h5 class="footer-title">Support</h5>
             <ul class="footer-link-list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Blogs</a></li>
-              <li><a href="#">Blog Post</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="our_blog.html">Blogs</a></li>
+              <li><a href="blog_details.html">Blog Post</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
 
