@@ -553,9 +553,9 @@ textarea:hover {
 }
 
 .login-card {
-  max-width: 450px;
+  max-width: 500px;
   margin: 70px auto;
-  padding: 40px;
+  padding: 20px;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
@@ -578,7 +578,7 @@ textarea:hover {
 }
 
 .btn-login {
-  background: #059142;
+  background: #f7a600;
   border: none;
   height: 50px;
   font-size: 18px;
@@ -589,6 +589,7 @@ textarea:hover {
 
 .btn-login:hover {
   background: #047c38;
+  transition: 0.5s;
 }
 
 .signup-card {
