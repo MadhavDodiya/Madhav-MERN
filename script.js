@@ -72,7 +72,7 @@ function changeImage(img) {
   img.classList.add("active");
 }
 
-  (function () {
+(function () {
     // The collapse container
     var mainCollapse = document.getElementById('mainNavbar');
     var toggler = document.querySelector('.navbar-toggler');
